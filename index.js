@@ -1,4 +1,7 @@
 import app from './src/app.js'
+import dotenv from 'dotenv'
+
+dotenv.config({path:'./config.env'})
 
 const startServer = () => {
     const port = process.env.PORT || 3000
