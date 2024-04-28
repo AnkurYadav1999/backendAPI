@@ -3,9 +3,11 @@ import express from 'express'
 const app = express()
 
 // Routes 
-
-app.get('/',(req,res)=>{
-    res.send("<h1>This is home page</h1>")
+app.get('/',(req,res,next)=>{
+    res.json({
+        message:"Welcome to our API library"
+    })
 })
+
 
 export default app;
